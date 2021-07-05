@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@
   -o-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-/* Beginning of Navbar */
+/* Beginning of Navbar Section*/
 
 nav {
     position: absolute;
@@ -21,9 +22,9 @@ nav {
     left: 0px;
     top: 0px;
     background: #C70065;
-    /* line-height: 95px; */
-    /* z-index: 1; */
-    /* position: fixed; */
+    line-height: 95px;
+    z-index: 1;
+    position: fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -35,7 +36,7 @@ div nav h1#one.logo {
     height: 118px;
     left: 30px;
     top: -12px;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Fredericka the Great';
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
@@ -46,9 +47,9 @@ div nav h1#two.logo {
     position: absolute;
     width: 175px;
     height: 48px;
-    left: 54px;
-    top: 34px;
-    font-family: 'Special Elite', cursive;
+    left: 58px;
+    top: 29px;
+    font-family: 'Special Elite';
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -58,42 +59,165 @@ div nav h1#two.logo {
 div nav ul.options {
     position: absolute;
     width: 83px;
-    height: 48px;
     left: 813px;
-    top: 27px;
-    font-family: 'Special Elite' cursive;
+    top: 20px;
+    font-family: 'Special Elite';
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
     line-height: 48px;
     display: flex;
     flex-direction: row;
 }
 nav ul.options li {
     list-style-type: none;
-    /* display: inline-block; */
-    /* line-height: 80px; */
     margin: 0 30px;
-
 }
 nav ul.options li a {
-        color: #FFFFFF;
-        font-size: 35px;
-        text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 35px;
+  text-transform: uppercase;
 }
+nav ul.options li a:hover {
+  color: #FF7400;
+  text-decoration: 3px underline;
+}
+/* End of Navbar Section*/
 
-/* End of Navbar */
-
-/* Beginning of Herro */
-
-div.herro-container {
+/* Beginning of Hero Section*/
+div.hero-container {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 676px;
     left: 0px;
     top: 95px;
-    /* background: url(gemma-chua-tran-no1ZI2uXTFw-unsplash.jpg); */
     background: url('./images/gemma-chua-tran-no1ZI2uXTFw-unsplash.jpg');
+    background-size: 100% 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    margin: 0 auto;
+    padding: 0 50px;
 }
+div ul#one.btn li a.one {
+  position: absolute;
+  left: 90%;
+  top: 4%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  line-height: 47px;
+  color: #111010;
+  background: #C70065;
+  border-radius: 30px;
+  padding: 10px;
+}
+div ul#one.btn li a.one:hover {
+  color: #FF7400;
+  background-color: #210136;
+}
+div ul#one.btn li a.two {
+  position: absolute;
+  left: 83%;
+  top: 15%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #111010;
+  background: #C70065;
+  padding: 10px;
+  border-radius: 30px;
+}
+div ul#one.btn li a.two:hover {
+  color: #FF7400;
+  background-color: #210136;
+}
+ul#one.btn li {
+  list-style-type: none;
+}
+ul#two.btn li {
+  list-style-type: none;
+}
+div.hero-container div h2 {
+  display: block;
+  width: fit-content;
+  position: absolute;
+  left: 25px;
+  top: 10%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+}
+div.hero-container div.cover {
+  position: absolute;
+  width: 413px;
+  height: 170px;
+  left: 30px;
+  top: 70%;
+  background: rgba(199, 0, 101, 0.24);
+}
+div ul#two.btn li a.three {
+  position: absolute;
+  height: 47px;
+  left: 25px;
+  top: 55%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #111010;
+  align-items: center;
+  display: flex;
+  background: #C70065;
+  padding: 15px;
+  border-radius: 30px;
+}
+div ul#two.btn li a.three:hover {
+  color: #FF7400;
+  background-color: #210136;
+}
+div ul#two.btn li a.four {
+  position: absolute;
+  height: 47px;
+  left: 210px;
+  top: 55%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #111010;
+  align-items: center;
+  display: flex;
+  background: #C70065;
+  padding: 15px;
+  border-radius: 30px;
+}
+div ul#two.btn li a.four:hover {
+  color: #FF7400;
+  background-color: #210136;
+}
+/* End of Hero Section*/
 
-/* End of Herro */
+/* Beginning of Footer Section */
+footer {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  left: 0px;
+  top: 771px;
+  background: #C70065;
+}
+footer p {
+  text-align: center;
+  margin-top: 5px;
+}
+footer p span {
+  font-weight: bold;
+}
+/* End of Footer Section */
